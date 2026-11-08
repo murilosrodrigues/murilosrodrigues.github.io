@@ -4,24 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Criação de Sites para Autônomos e Pequenos Negócios | Murilo Rodrigues</title>
-<meta name="description" content="Criação de sites e landing pages para autônomos e pequenos negócios em São Paulo e Santa Catarina. Atendimento remoto, valores definidos e contato direto pelo WhatsApp.">
+<meta name="description" content="Criação de sites e landing pages para autônomos e pequenos negócios em todo o Brasil. Atendimento remoto, valores definidos e contato direto pelo WhatsApp.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="[SEU_DOMINIO]">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Criação de Sites para Autônomos e Pequenos Negócios | Murilo Rodrigues">
-<meta property="og:description" content="Landing pages e sites institucionais para autônomos e pequenos negócios em São Paulo e Santa Catarina.">
-<meta property="og:image" content="[URL_IMAGEM_DE_PREVIEW]">
+<meta property="og:description" content="Landing pages e sites institucionais para autônomos e pequenos negócios em todo o Brasil.">
+<meta property="og:url" content="https://murilosrodrigues.github.io/Myself_land/">
+<meta property="og:image" content="https://murilosrodrigues.github.io/Myself_land/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Criação de sites para autônomos e pequenos negócios: promoção de fim de ano, por Murilo Rodrigues">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://murilosrodrigues.github.io/Myself_land/assets/img/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body id="topo">
 
 <header class="header">
   <div class="container">
     <a class="logo" href="#topo">Murilo <span>Rodrigues</span></a>
-    <a href="index2.html">Segunda opção de pagina</a>
     <a class="btn btn-wa btn-sm wa-link" href="#">WhatsApp</a>
   </div>
 </header>
@@ -32,7 +37,7 @@
     <div>
       <span class="eyebrow">Criação de sites · Atendimento remoto</span>
       <h1>Criação de sites profissionais para <span>autônomos</span> e pequenos negócios</h1>
-      <p class="lead">Desenvolvo landing pages e sites institucionais para personal trainers, nutricionistas, psicólogos, esteticistas e comércios de bairro. Os sites são otimizados para celular e incluem botão de WhatsApp e formulário de contato.</p>
+      <p class="lead">Desenvolvo landing pages e sites institucionais, atendendo desde personal trainers, nutricionistas, psicólogos, esteticistas, comércios de bairro seja qual for seu nicho. Os sites são otimizados para celular e incluem botão de WhatsApp e formulário de contato.</p>
       <div class="cta-row">
         <a class="btn btn-primary wa-link" href="#">Falar pelo WhatsApp</a>
         <a class="btn btn-secondary" href="#contato">Solicitar orçamento</a>
@@ -43,7 +48,7 @@
       </div>
     </div>
     <div class="hero-visual" style="padding:0;overflow:hidden">
-      <img src="img/fabio-pereira-captura.png" alt="Captura de tela da landing page do projeto Fábio Pereira, nutricionista esportivo" style="width:100%;height:auto;display:block">
+      <img src="assets/img/fabio-pereira-captura.png" alt="Captura de tela da landing page do projeto Fábio Pereira, nutricionista esportivo" style="width:100%;height:auto;display:block">
     </div>
   </div>
 </section>
@@ -112,13 +117,22 @@
       <h2>Serviços e valores</h2>
       <p class="lead">Valores iniciais de cada serviço. O valor final depende do escopo do projeto, e alterações maiores são orçadas à parte.</p>
     </div>
+    <div class="promo-banner promo-only">
+      <span class="badge badge-promo">Promoção de fim de ano</span>
+      <p><strong>R$ 500 de desconto</strong> na landing page e no site institucional para contratos fechados até <strong>23/12/2026</strong>. Depois dessa data, voltam os valores normais.</p>
+    </div>
     <div class="grid grid-3">
       <div class="card service featured">
-        <span class="badge tag">Indicado para começar</span>
+        <div class="tag-row">
+          <span class="badge tag">Indicado para começar</span>
+          <span class="badge badge-promo promo-only">45% OFF</span>
+        </div>
         <h3>Landing page</h3>
         <p class="muted small">Página única, voltada para gerar contatos.</p>
-        <div class="price-from">A partir de</div>
-        <div class="price">R$ 1.100</div>
+        <div class="price-from" data-promo="Promoção de fim de ano" data-normal="A partir de">Promoção de fim de ano</div>
+        <div class="price-old promo-only">De R$ 1.100</div>
+        <div class="price" data-promo="R$ 600" data-normal="R$ 1.100">R$ 600</div>
+        <div class="promo-note promo-only">Economize R$ 500 · válido até 23/12/2026</div>
         <ul class="checks">
           <li>1 página</li>
           <li>Layout otimizado para celular</li>
@@ -129,10 +143,15 @@
         <a class="btn btn-primary btn-block wa-link" href="#">Receber orçamento da landing page</a>
       </div>
       <div class="card service">
+        <div class="tag-row promo-only">
+          <span class="badge badge-promo">28% OFF</span>
+        </div>
         <h3>Site institucional</h3>
         <p class="muted small">Para negócios que precisam apresentar mais informações.</p>
-        <div class="price-from">A partir de</div>
-        <div class="price">R$ 1.800</div>
+        <div class="price-from" data-promo="Promoção de fim de ano" data-normal="A partir de">Promoção de fim de ano</div>
+        <div class="price-old promo-only">De R$ 1.800</div>
+        <div class="price" data-promo="R$ 1.300" data-normal="R$ 1.800">R$ 1.300</div>
+        <div class="promo-note promo-only">Economize R$ 500 · válido até 23/12/2026</div>
         <ul class="checks">
           <li>Até 3 páginas</li>
           <li>Layout otimizado para celular</li>
@@ -155,10 +174,11 @@
         <a class="btn btn-secondary btn-block wa-link" href="#">Receber proposta de manutenção</a>
       </div>
     </div>
+    <p class="caption promo-only" style="margin-top:20px">* Promoção de fim de ano para landing page e site institucional em contratos fechados até 23/12/2026. Depois dessa data, valem os valores normais (a partir de R$ 1.100 e R$ 1.800).</p>
     <p class="caption" style="margin-top:20px">* Valores podem variar conforme o escopo. Solicite seu orçamento sob medida.</p>
-    <p class="caption" style="margin-top:20px">* Domínio e hospedagem: COBRADOS À PARTE.</p>
+    <p class="caption" style="margin-top:20px">* Domínio e hospedagem são pagos à parte, em conta no nome do cliente.</p>
 
-    
+
   </div>
 </section>
 
@@ -172,12 +192,12 @@
     </div>
     <div class="grid grid-2">
       <div class="card">
-        <video src="video/fabio-pereira-projeto.mp4" autoplay muted loop playsinline controls preload="metadata" style="width:100%;border-radius:8px;display:block;background:#070D18" aria-label="Vídeo de navegação pela landing page do projeto Fábio Pereira">Seu navegador não suporta vídeo.</video>
+        <video src="assets/video/fabio-pereira-projeto.mp4" autoplay muted loop playsinline controls preload="metadata" style="width:100%;border-radius:4px;display:block;background:#020308" aria-label="Vídeo de navegação pela landing page do projeto Fábio Pereira">Seu navegador não suporta vídeo.</video>
         <h3 style="margin-top:18px">Fábio Pereira — Landing page para nutricionista esportivo</h3>
         <p class="muted small">Página de apresentação do profissional, com seção sobre o atendimento, produtos digitais e depoimentos de pacientes, com contato direto pelo WhatsApp.</p>
         <div class="project-meta">
           <span class="badge badge-success">Entregue</span>
-          <a href="[LINK_DO_SITE]" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Acessar o site →</a>
+          <a href="https://www.fábiopereiranutricionista.com.br/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Acessar o site →</a>
         </div>
       </div>
       <div class="card">
@@ -189,33 +209,14 @@
           <a href="#contato" class="btn btn-ghost btn-sm">Falar sobre um projeto →</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 5. DEPOIMENTOS -->
-<section class="soft">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Depoimentos</span>
-      <h2>Depoimentos de clientes</h2>
-      <!-- Publicar somente depoimentos reais, com autorização de quem escreveu. -->
-    </div>
-    <div class="grid grid-3">
-      <div class="card testimonial">
-        <div class="quote-mark">“</div>
-        <p class="quote">[DEPOIMENTO 1]</p>
-        <p class="who"><strong>Fábio Pereira</strong><br>Nutricionista · Balneário Camboriú / SC</p>
-      </div>
-      <div class="card testimonial">
-        <div class="quote-mark">“</div>
-        <p class="quote">[DEPOIMENTO 2]</p>
-        <p class="who"><strong>[NOME]</strong><br>[PROFISSÃO] · [CIDADE/UF]</p>
-      </div>
-      <div class="card testimonial">
-        <div class="quote-mark">“</div>
-        <p class="quote">[DEPOIMENTO 3]</p>
-        <p class="who"><strong>[NOME]</strong><br>[PROFISSÃO] · [CIDADE/UF]</p>
+      <div class="card" style="grid-column:1/-1">
+        <div class="card-icon">L</div>
+        <h3>Landing pages em desenvolvimento</h3>
+        <p class="muted">Estamos desenvolvendo uma landing page para um personal trainer e outros projetos que aguardam aprovação do cliente.</p>
+        <div class="project-meta">
+          <span class="badge">Em desenvolvimento</span>
+          <span class="badge">Aguardando aprovação</span>
+        </div>
       </div>
     </div>
   </div>
@@ -246,7 +247,7 @@
     </details>
     <details>
       <summary>Como funciona o pagamento?</summary>
-      <p>Na landing page, 50% do valor é pago na contratação e 50% na entrega. Formas de pagamento aceitas: [PIX / BOLETO / CARTÃO].</p>
+      <p>Na landing page, 50% do valor é pago na contratação e 50% na entrega. Formas de pagamento aceitas: dinheiro ou Pix.</p>
     </details>
     <details>
       <summary>Preciso ter conhecimento técnico?</summary>
@@ -254,7 +255,7 @@
     </details>
     <details>
       <summary>Vocês atendem clientes de outras cidades?</summary>
-      <p>O atendimento é remoto. A maior parte dos clientes está em São Paulo e Santa Catarina.</p>
+      <p>O atendimento é remoto e feito para todo o Brasil. Já atendemos clientes em São Paulo e Santa Catarina.</p>
     </details>
   </div>
 </section>
@@ -324,10 +325,8 @@
 <footer class="footer">
   <div class="container">
     <a class="logo" href="#topo">Murilo <span>Rodrigues</span></a>
-    <p>Desenvolvedor de software. Criação de sites e landing pages para autônomos e pequenos negócios em todo Brasil</p>
-    <!--<p>WhatsApp: <a class="wa-link" href="#">[SEU NÚMERO]</a> · E-mail: <a href="mailto:[E-MAIL]">[E-MAIL]</a></p>-->
+    <p>Desenvolvedor de software. Criação de sites e landing pages para autônomos e pequenos negócios em todo o Brasil.</p>
     <p><a href="#privacidade">Aviso de privacidade</a></p>
-    <!--<p class="caption">MEI: [CNPJ] · [CIDADE/UF]</p>-->
     <p class="caption">&copy; <span id="ano-atual"></span> Murilo Rodrigues. Todos os direitos reservados.</p>
   </div>
 </footer>
@@ -335,7 +334,7 @@
 <!-- WhatsApp fixo: visível em toda a página, no celular e no computador -->
 <a class="float-wa wa-link" href="#" aria-label="Falar pelo WhatsApp">WhatsApp</a>
 
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>

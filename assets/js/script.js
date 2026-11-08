@@ -1,7 +1,7 @@
 document.getElementById("ano-atual").textContent = new Date().getFullYear();
 
-// Substitua pelo seu número com DDI e DDD, apenas dígitos. Ex.: 5547999999999
-var WA_NUMBER = "12997152912";
+// Substitua pelo seu número com DDI e DDD, apenas dígitos. Ex.: 5547999999999 (55 = Brasil)
+var WA_NUMBER = "5512997152912";
 
 function waLink(text) {
   return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(text);
@@ -33,3 +33,10 @@ document.getElementById("form-contato").addEventListener("submit", function (e) 
     "Descrição: " + (d.get("mensagem") || "-");
   window.open(waLink(msg), "_blank", "noopener");
 });
+
+// Promoção de fim de ano: vale até 23/12/2026 (horário de Brasília). Depois disso,
+// esconde selos e avisos e volta aos valores normais.
+if (new Date() >= new Date("2026-12-24T00:00:00-03:00")) {
+  document.querySelectorAll(".promo-only").forEach(function (el) { el.hidden = true; });
+  document.querySelectorAll("[data-normal]").forEach(function (el) { el.textContent = el.getAttribute("data-normal"); });
+}
