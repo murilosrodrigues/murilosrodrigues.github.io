@@ -34,9 +34,3 @@ document.getElementById("form-contato").addEventListener("submit", function (e) 
   window.open(waLink(msg), "_blank", "noopener");
 });
 
-// Promoção de fim de ano: vale até 23/12/2026 (horário de Brasília). Depois disso,
-// esconde selos e avisos e volta aos valores normais.
-if (new Date() >= new Date("2026-12-24T00:00:00-03:00")) {
-  document.querySelectorAll(".promo-only").forEach(function (el) { el.hidden = true; });
-  document.querySelectorAll("[data-normal]").forEach(function (el) { el.textContent = el.getAttribute("data-normal"); });
-}

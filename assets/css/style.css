@@ -186,18 +186,7 @@ p{margin-bottom:12px}
 .service .tag{align-self:flex-start;margin-bottom:12px}
 .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .tag-row .tag{margin-bottom:0}
-.badge-promo{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700;box-shadow:var(--shadow-glow-magenta)}
-.promo-banner{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin:0 0 24px;padding:14px 18px;border:1px solid var(--accent);background:rgba(255,44,219,.06);border-radius:var(--radius-md)}
-.promo-banner p{margin:0;font-size:15px;color:var(--text);flex:1 1 280px}
-.price-old{font-family:var(--font-mono);font-size:15px;color:var(--muted);text-decoration:line-through;margin-top:4px}
-.promo-note{font-family:var(--font-mono);font-size:12px;color:var(--accent);margin-top:6px;letter-spacing:.04em}
 .service .btn{margin-top:auto}
-.price-from{
-  font-family:var(--font-mono);font-size:11px;font-weight:500;color:var(--muted);
-  text-transform:uppercase;letter-spacing:.1em;margin-top:12px;
-}
-.price{font-family:var(--font-mono);font-size:26px;font-weight:700;color:var(--primary);margin:4px 0 0}
-.price small{font-size:13px;font-weight:500;color:var(--muted)}
 ul.checks{list-style:none;margin:16px 0 20px}
 ul.checks li{position:relative;padding-left:24px;margin-bottom:8px;font-size:15px;color:var(--muted)}
 ul.checks li::before{content:"▸";position:absolute;left:0;top:0;color:var(--success);font-weight:700}
